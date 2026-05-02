@@ -1,15 +1,15 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 
-// 测试函数声明
 void test_two_sum();
+void test_basic_sort();
 void test_binary_search();
 
 int main() {
-    cout << "=== Algorithm Test Runner ===" << endl;
+    printf("=== C Algorithm Test ===\n");
 
     test_two_sum();
+    test_basic_sort();
     test_binary_search();
-
+    
     return 0;
 }
