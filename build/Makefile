@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/haoji/workSpace/dev/algoPractice
+CMAKE_SOURCE_DIR = /Users/haoji/workSpace/dev/algo-practice
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/haoji/workSpace/dev/algoPractice/build
+CMAKE_BINARY_DIR = /Users/haoji/workSpace/dev/algo-practice/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/haoji/workSpace/dev/algoPractice/build/CMakeFiles /Users/haoji/workSpace/dev/algoPractice/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/haoji/workSpace/dev/algo-practice/build/CMakeFiles /Users/haoji/workSpace/dev/algo-practice/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/haoji/workSpace/dev/algoPractice/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/haoji/workSpace/dev/algo-practice/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,101 +129,245 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-src/array/two_sum.o: src/array/two_sum.cpp.o
+src/array/two_sum.o: src/array/two_sum.c.o
 .PHONY : src/array/two_sum.o
 
 # target to build an object file
-src/array/two_sum.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/array/two_sum.cpp.o
-.PHONY : src/array/two_sum.cpp.o
+src/array/two_sum.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/array/two_sum.c.o
+.PHONY : src/array/two_sum.c.o
 
-src/array/two_sum.i: src/array/two_sum.cpp.i
+src/array/two_sum.i: src/array/two_sum.c.i
 .PHONY : src/array/two_sum.i
 
 # target to preprocess a source file
-src/array/two_sum.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/array/two_sum.cpp.i
-.PHONY : src/array/two_sum.cpp.i
+src/array/two_sum.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/array/two_sum.c.i
+.PHONY : src/array/two_sum.c.i
 
-src/array/two_sum.s: src/array/two_sum.cpp.s
+src/array/two_sum.s: src/array/two_sum.c.s
 .PHONY : src/array/two_sum.s
 
 # target to generate assembly for a file
-src/array/two_sum.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/array/two_sum.cpp.s
-.PHONY : src/array/two_sum.cpp.s
+src/array/two_sum.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/array/two_sum.c.s
+.PHONY : src/array/two_sum.c.s
 
-src/main.o: src/main.cpp.o
+src/main.o: src/main.c.o
 .PHONY : src/main.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.c.o
+.PHONY : src/main.c.o
 
-src/main.i: src/main.cpp.i
+src/main.i: src/main.c.i
 .PHONY : src/main.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.c.i
+.PHONY : src/main.c.i
 
-src/main.s: src/main.cpp.s
+src/main.s: src/main.c.s
 .PHONY : src/main.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.c.s
+.PHONY : src/main.c.s
 
-src/tests/test_binary_search.o: src/tests/test_binary_search.cpp.o
+src/past_questions/utokyo_cs_2022.o: src/past_questions/utokyo_cs_2022.c.o
+.PHONY : src/past_questions/utokyo_cs_2022.o
+
+# target to build an object file
+src/past_questions/utokyo_cs_2022.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/past_questions/utokyo_cs_2022.c.o
+.PHONY : src/past_questions/utokyo_cs_2022.c.o
+
+src/past_questions/utokyo_cs_2022.i: src/past_questions/utokyo_cs_2022.c.i
+.PHONY : src/past_questions/utokyo_cs_2022.i
+
+# target to preprocess a source file
+src/past_questions/utokyo_cs_2022.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/past_questions/utokyo_cs_2022.c.i
+.PHONY : src/past_questions/utokyo_cs_2022.c.i
+
+src/past_questions/utokyo_cs_2022.s: src/past_questions/utokyo_cs_2022.c.s
+.PHONY : src/past_questions/utokyo_cs_2022.s
+
+# target to generate assembly for a file
+src/past_questions/utokyo_cs_2022.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/past_questions/utokyo_cs_2022.c.s
+.PHONY : src/past_questions/utokyo_cs_2022.c.s
+
+src/sort/basic_sort.o: src/sort/basic_sort.c.o
+.PHONY : src/sort/basic_sort.o
+
+# target to build an object file
+src/sort/basic_sort.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/sort/basic_sort.c.o
+.PHONY : src/sort/basic_sort.c.o
+
+src/sort/basic_sort.i: src/sort/basic_sort.c.i
+.PHONY : src/sort/basic_sort.i
+
+# target to preprocess a source file
+src/sort/basic_sort.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/sort/basic_sort.c.i
+.PHONY : src/sort/basic_sort.c.i
+
+src/sort/basic_sort.s: src/sort/basic_sort.c.s
+.PHONY : src/sort/basic_sort.s
+
+# target to generate assembly for a file
+src/sort/basic_sort.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/sort/basic_sort.c.s
+.PHONY : src/sort/basic_sort.c.s
+
+src/tests/test_basic_sort.o: src/tests/test_basic_sort.c.o
+.PHONY : src/tests/test_basic_sort.o
+
+# target to build an object file
+src/tests/test_basic_sort.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tests/test_basic_sort.c.o
+.PHONY : src/tests/test_basic_sort.c.o
+
+src/tests/test_basic_sort.i: src/tests/test_basic_sort.c.i
+.PHONY : src/tests/test_basic_sort.i
+
+# target to preprocess a source file
+src/tests/test_basic_sort.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tests/test_basic_sort.c.i
+.PHONY : src/tests/test_basic_sort.c.i
+
+src/tests/test_basic_sort.s: src/tests/test_basic_sort.c.s
+.PHONY : src/tests/test_basic_sort.s
+
+# target to generate assembly for a file
+src/tests/test_basic_sort.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tests/test_basic_sort.c.s
+.PHONY : src/tests/test_basic_sort.c.s
+
+src/tests/test_binary_search.o: src/tests/test_binary_search.c.o
 .PHONY : src/tests/test_binary_search.o
 
 # target to build an object file
-src/tests/test_binary_search.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tests/test_binary_search.cpp.o
-.PHONY : src/tests/test_binary_search.cpp.o
+src/tests/test_binary_search.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tests/test_binary_search.c.o
+.PHONY : src/tests/test_binary_search.c.o
 
-src/tests/test_binary_search.i: src/tests/test_binary_search.cpp.i
+src/tests/test_binary_search.i: src/tests/test_binary_search.c.i
 .PHONY : src/tests/test_binary_search.i
 
 # target to preprocess a source file
-src/tests/test_binary_search.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tests/test_binary_search.cpp.i
-.PHONY : src/tests/test_binary_search.cpp.i
+src/tests/test_binary_search.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tests/test_binary_search.c.i
+.PHONY : src/tests/test_binary_search.c.i
 
-src/tests/test_binary_search.s: src/tests/test_binary_search.cpp.s
+src/tests/test_binary_search.s: src/tests/test_binary_search.c.s
 .PHONY : src/tests/test_binary_search.s
 
 # target to generate assembly for a file
-src/tests/test_binary_search.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tests/test_binary_search.cpp.s
-.PHONY : src/tests/test_binary_search.cpp.s
+src/tests/test_binary_search.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tests/test_binary_search.c.s
+.PHONY : src/tests/test_binary_search.c.s
 
-src/tests/test_two_sum.o: src/tests/test_two_sum.cpp.o
+src/tests/test_dynarray.o: src/tests/test_dynarray.c.o
+.PHONY : src/tests/test_dynarray.o
+
+# target to build an object file
+src/tests/test_dynarray.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tests/test_dynarray.c.o
+.PHONY : src/tests/test_dynarray.c.o
+
+src/tests/test_dynarray.i: src/tests/test_dynarray.c.i
+.PHONY : src/tests/test_dynarray.i
+
+# target to preprocess a source file
+src/tests/test_dynarray.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tests/test_dynarray.c.i
+.PHONY : src/tests/test_dynarray.c.i
+
+src/tests/test_dynarray.s: src/tests/test_dynarray.c.s
+.PHONY : src/tests/test_dynarray.s
+
+# target to generate assembly for a file
+src/tests/test_dynarray.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tests/test_dynarray.c.s
+.PHONY : src/tests/test_dynarray.c.s
+
+src/tests/test_two_sum.o: src/tests/test_two_sum.c.o
 .PHONY : src/tests/test_two_sum.o
 
 # target to build an object file
-src/tests/test_two_sum.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tests/test_two_sum.cpp.o
-.PHONY : src/tests/test_two_sum.cpp.o
+src/tests/test_two_sum.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tests/test_two_sum.c.o
+.PHONY : src/tests/test_two_sum.c.o
 
-src/tests/test_two_sum.i: src/tests/test_two_sum.cpp.i
+src/tests/test_two_sum.i: src/tests/test_two_sum.c.i
 .PHONY : src/tests/test_two_sum.i
 
 # target to preprocess a source file
-src/tests/test_two_sum.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tests/test_two_sum.cpp.i
-.PHONY : src/tests/test_two_sum.cpp.i
+src/tests/test_two_sum.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tests/test_two_sum.c.i
+.PHONY : src/tests/test_two_sum.c.i
 
-src/tests/test_two_sum.s: src/tests/test_two_sum.cpp.s
+src/tests/test_two_sum.s: src/tests/test_two_sum.c.s
 .PHONY : src/tests/test_two_sum.s
 
 # target to generate assembly for a file
-src/tests/test_two_sum.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tests/test_two_sum.cpp.s
-.PHONY : src/tests/test_two_sum.cpp.s
+src/tests/test_two_sum.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tests/test_two_sum.c.s
+.PHONY : src/tests/test_two_sum.c.s
+
+src/tree/avl_tree.o: src/tree/avl_tree.c.o
+.PHONY : src/tree/avl_tree.o
+
+# target to build an object file
+src/tree/avl_tree.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tree/avl_tree.c.o
+.PHONY : src/tree/avl_tree.c.o
+
+src/tree/avl_tree.i: src/tree/avl_tree.c.i
+.PHONY : src/tree/avl_tree.i
+
+# target to preprocess a source file
+src/tree/avl_tree.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tree/avl_tree.c.i
+.PHONY : src/tree/avl_tree.c.i
+
+src/tree/avl_tree.s: src/tree/avl_tree.c.s
+.PHONY : src/tree/avl_tree.s
+
+# target to generate assembly for a file
+src/tree/avl_tree.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tree/avl_tree.c.s
+.PHONY : src/tree/avl_tree.c.s
+
+utils/dynarray.o: utils/dynarray.c.o
+.PHONY : utils/dynarray.o
+
+# target to build an object file
+utils/dynarray.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/utils/dynarray.c.o
+.PHONY : utils/dynarray.c.o
+
+utils/dynarray.i: utils/dynarray.c.i
+.PHONY : utils/dynarray.i
+
+# target to preprocess a source file
+utils/dynarray.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/utils/dynarray.c.i
+.PHONY : utils/dynarray.c.i
+
+utils/dynarray.s: utils/dynarray.c.s
+.PHONY : utils/dynarray.s
+
+# target to generate assembly for a file
+utils/dynarray.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/utils/dynarray.c.s
+.PHONY : utils/dynarray.c.s
 
 # Help Target
 help:
@@ -240,12 +384,30 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/past_questions/utokyo_cs_2022.o"
+	@echo "... src/past_questions/utokyo_cs_2022.i"
+	@echo "... src/past_questions/utokyo_cs_2022.s"
+	@echo "... src/sort/basic_sort.o"
+	@echo "... src/sort/basic_sort.i"
+	@echo "... src/sort/basic_sort.s"
+	@echo "... src/tests/test_basic_sort.o"
+	@echo "... src/tests/test_basic_sort.i"
+	@echo "... src/tests/test_basic_sort.s"
 	@echo "... src/tests/test_binary_search.o"
 	@echo "... src/tests/test_binary_search.i"
 	@echo "... src/tests/test_binary_search.s"
+	@echo "... src/tests/test_dynarray.o"
+	@echo "... src/tests/test_dynarray.i"
+	@echo "... src/tests/test_dynarray.s"
 	@echo "... src/tests/test_two_sum.o"
 	@echo "... src/tests/test_two_sum.i"
 	@echo "... src/tests/test_two_sum.s"
+	@echo "... src/tree/avl_tree.o"
+	@echo "... src/tree/avl_tree.i"
+	@echo "... src/tree/avl_tree.s"
+	@echo "... utils/dynarray.o"
+	@echo "... utils/dynarray.i"
+	@echo "... utils/dynarray.s"
 .PHONY : help
 
 

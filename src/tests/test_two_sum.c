@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "../array/two_sum.h"
 
 void test_two_sum() {

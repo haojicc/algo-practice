@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/haoji/workSpace/dev/algoPractice
+CMAKE_SOURCE_DIR = /Users/haoji/workSpace/dev/algo-practice
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/haoji/workSpace/dev/algoPractice/build
+CMAKE_BINARY_DIR = /Users/haoji/workSpace/dev/algo-practice/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/main.dir/depend.make
@@ -72,79 +72,175 @@ include CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/codegen:
 .PHONY : CMakeFiles/main.dir/codegen
 
-CMakeFiles/main.dir/src/array/two_sum.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/array/two_sum.cpp.o: /Users/haoji/workSpace/dev/algoPractice/src/array/two_sum.cpp
-CMakeFiles/main.dir/src/array/two_sum.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/haoji/workSpace/dev/algoPractice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/src/array/two_sum.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/array/two_sum.cpp.o -MF CMakeFiles/main.dir/src/array/two_sum.cpp.o.d -o CMakeFiles/main.dir/src/array/two_sum.cpp.o -c /Users/haoji/workSpace/dev/algoPractice/src/array/two_sum.cpp
+CMakeFiles/main.dir/src/array/two_sum.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/array/two_sum.c.o: /Users/haoji/workSpace/dev/algo-practice/src/array/two_sum.c
+CMakeFiles/main.dir/src/array/two_sum.c.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/haoji/workSpace/dev/algo-practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/main.dir/src/array/two_sum.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/array/two_sum.c.o -MF CMakeFiles/main.dir/src/array/two_sum.c.o.d -o CMakeFiles/main.dir/src/array/two_sum.c.o -c /Users/haoji/workSpace/dev/algo-practice/src/array/two_sum.c
 
-CMakeFiles/main.dir/src/array/two_sum.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/array/two_sum.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/haoji/workSpace/dev/algoPractice/src/array/two_sum.cpp > CMakeFiles/main.dir/src/array/two_sum.cpp.i
+CMakeFiles/main.dir/src/array/two_sum.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/array/two_sum.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/haoji/workSpace/dev/algo-practice/src/array/two_sum.c > CMakeFiles/main.dir/src/array/two_sum.c.i
 
-CMakeFiles/main.dir/src/array/two_sum.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/array/two_sum.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/haoji/workSpace/dev/algoPractice/src/array/two_sum.cpp -o CMakeFiles/main.dir/src/array/two_sum.cpp.s
+CMakeFiles/main.dir/src/array/two_sum.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/array/two_sum.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/haoji/workSpace/dev/algo-practice/src/array/two_sum.c -o CMakeFiles/main.dir/src/array/two_sum.c.s
 
-CMakeFiles/main.dir/src/main.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/main.cpp.o: /Users/haoji/workSpace/dev/algoPractice/src/main.cpp
-CMakeFiles/main.dir/src/main.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/haoji/workSpace/dev/algoPractice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/main.cpp.o -MF CMakeFiles/main.dir/src/main.cpp.o.d -o CMakeFiles/main.dir/src/main.cpp.o -c /Users/haoji/workSpace/dev/algoPractice/src/main.cpp
+CMakeFiles/main.dir/src/main.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/main.c.o: /Users/haoji/workSpace/dev/algo-practice/src/main.c
+CMakeFiles/main.dir/src/main.c.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/haoji/workSpace/dev/algo-practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/main.dir/src/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/main.c.o -MF CMakeFiles/main.dir/src/main.c.o.d -o CMakeFiles/main.dir/src/main.c.o -c /Users/haoji/workSpace/dev/algo-practice/src/main.c
 
-CMakeFiles/main.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/haoji/workSpace/dev/algoPractice/src/main.cpp > CMakeFiles/main.dir/src/main.cpp.i
+CMakeFiles/main.dir/src/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/main.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/haoji/workSpace/dev/algo-practice/src/main.c > CMakeFiles/main.dir/src/main.c.i
 
-CMakeFiles/main.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/haoji/workSpace/dev/algoPractice/src/main.cpp -o CMakeFiles/main.dir/src/main.cpp.s
+CMakeFiles/main.dir/src/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/main.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/haoji/workSpace/dev/algo-practice/src/main.c -o CMakeFiles/main.dir/src/main.c.s
 
-CMakeFiles/main.dir/src/tests/test_binary_search.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/tests/test_binary_search.cpp.o: /Users/haoji/workSpace/dev/algoPractice/src/tests/test_binary_search.cpp
-CMakeFiles/main.dir/src/tests/test_binary_search.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/haoji/workSpace/dev/algoPractice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/tests/test_binary_search.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/tests/test_binary_search.cpp.o -MF CMakeFiles/main.dir/src/tests/test_binary_search.cpp.o.d -o CMakeFiles/main.dir/src/tests/test_binary_search.cpp.o -c /Users/haoji/workSpace/dev/algoPractice/src/tests/test_binary_search.cpp
+CMakeFiles/main.dir/src/past_questions/utokyo_cs_2022.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/past_questions/utokyo_cs_2022.c.o: /Users/haoji/workSpace/dev/algo-practice/src/past_questions/utokyo_cs_2022.c
+CMakeFiles/main.dir/src/past_questions/utokyo_cs_2022.c.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/haoji/workSpace/dev/algo-practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/main.dir/src/past_questions/utokyo_cs_2022.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/past_questions/utokyo_cs_2022.c.o -MF CMakeFiles/main.dir/src/past_questions/utokyo_cs_2022.c.o.d -o CMakeFiles/main.dir/src/past_questions/utokyo_cs_2022.c.o -c /Users/haoji/workSpace/dev/algo-practice/src/past_questions/utokyo_cs_2022.c
 
-CMakeFiles/main.dir/src/tests/test_binary_search.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/tests/test_binary_search.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/haoji/workSpace/dev/algoPractice/src/tests/test_binary_search.cpp > CMakeFiles/main.dir/src/tests/test_binary_search.cpp.i
+CMakeFiles/main.dir/src/past_questions/utokyo_cs_2022.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/past_questions/utokyo_cs_2022.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/haoji/workSpace/dev/algo-practice/src/past_questions/utokyo_cs_2022.c > CMakeFiles/main.dir/src/past_questions/utokyo_cs_2022.c.i
 
-CMakeFiles/main.dir/src/tests/test_binary_search.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/tests/test_binary_search.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/haoji/workSpace/dev/algoPractice/src/tests/test_binary_search.cpp -o CMakeFiles/main.dir/src/tests/test_binary_search.cpp.s
+CMakeFiles/main.dir/src/past_questions/utokyo_cs_2022.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/past_questions/utokyo_cs_2022.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/haoji/workSpace/dev/algo-practice/src/past_questions/utokyo_cs_2022.c -o CMakeFiles/main.dir/src/past_questions/utokyo_cs_2022.c.s
 
-CMakeFiles/main.dir/src/tests/test_two_sum.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/tests/test_two_sum.cpp.o: /Users/haoji/workSpace/dev/algoPractice/src/tests/test_two_sum.cpp
-CMakeFiles/main.dir/src/tests/test_two_sum.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/haoji/workSpace/dev/algoPractice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/tests/test_two_sum.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/tests/test_two_sum.cpp.o -MF CMakeFiles/main.dir/src/tests/test_two_sum.cpp.o.d -o CMakeFiles/main.dir/src/tests/test_two_sum.cpp.o -c /Users/haoji/workSpace/dev/algoPractice/src/tests/test_two_sum.cpp
+CMakeFiles/main.dir/src/sort/basic_sort.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/sort/basic_sort.c.o: /Users/haoji/workSpace/dev/algo-practice/src/sort/basic_sort.c
+CMakeFiles/main.dir/src/sort/basic_sort.c.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/haoji/workSpace/dev/algo-practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/main.dir/src/sort/basic_sort.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/sort/basic_sort.c.o -MF CMakeFiles/main.dir/src/sort/basic_sort.c.o.d -o CMakeFiles/main.dir/src/sort/basic_sort.c.o -c /Users/haoji/workSpace/dev/algo-practice/src/sort/basic_sort.c
 
-CMakeFiles/main.dir/src/tests/test_two_sum.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/tests/test_two_sum.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/haoji/workSpace/dev/algoPractice/src/tests/test_two_sum.cpp > CMakeFiles/main.dir/src/tests/test_two_sum.cpp.i
+CMakeFiles/main.dir/src/sort/basic_sort.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/sort/basic_sort.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/haoji/workSpace/dev/algo-practice/src/sort/basic_sort.c > CMakeFiles/main.dir/src/sort/basic_sort.c.i
 
-CMakeFiles/main.dir/src/tests/test_two_sum.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/tests/test_two_sum.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/haoji/workSpace/dev/algoPractice/src/tests/test_two_sum.cpp -o CMakeFiles/main.dir/src/tests/test_two_sum.cpp.s
+CMakeFiles/main.dir/src/sort/basic_sort.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/sort/basic_sort.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/haoji/workSpace/dev/algo-practice/src/sort/basic_sort.c -o CMakeFiles/main.dir/src/sort/basic_sort.c.s
+
+CMakeFiles/main.dir/src/tests/test_basic_sort.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/tests/test_basic_sort.c.o: /Users/haoji/workSpace/dev/algo-practice/src/tests/test_basic_sort.c
+CMakeFiles/main.dir/src/tests/test_basic_sort.c.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/haoji/workSpace/dev/algo-practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/main.dir/src/tests/test_basic_sort.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/tests/test_basic_sort.c.o -MF CMakeFiles/main.dir/src/tests/test_basic_sort.c.o.d -o CMakeFiles/main.dir/src/tests/test_basic_sort.c.o -c /Users/haoji/workSpace/dev/algo-practice/src/tests/test_basic_sort.c
+
+CMakeFiles/main.dir/src/tests/test_basic_sort.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/tests/test_basic_sort.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/haoji/workSpace/dev/algo-practice/src/tests/test_basic_sort.c > CMakeFiles/main.dir/src/tests/test_basic_sort.c.i
+
+CMakeFiles/main.dir/src/tests/test_basic_sort.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/tests/test_basic_sort.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/haoji/workSpace/dev/algo-practice/src/tests/test_basic_sort.c -o CMakeFiles/main.dir/src/tests/test_basic_sort.c.s
+
+CMakeFiles/main.dir/src/tests/test_binary_search.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/tests/test_binary_search.c.o: /Users/haoji/workSpace/dev/algo-practice/src/tests/test_binary_search.c
+CMakeFiles/main.dir/src/tests/test_binary_search.c.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/haoji/workSpace/dev/algo-practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/main.dir/src/tests/test_binary_search.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/tests/test_binary_search.c.o -MF CMakeFiles/main.dir/src/tests/test_binary_search.c.o.d -o CMakeFiles/main.dir/src/tests/test_binary_search.c.o -c /Users/haoji/workSpace/dev/algo-practice/src/tests/test_binary_search.c
+
+CMakeFiles/main.dir/src/tests/test_binary_search.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/tests/test_binary_search.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/haoji/workSpace/dev/algo-practice/src/tests/test_binary_search.c > CMakeFiles/main.dir/src/tests/test_binary_search.c.i
+
+CMakeFiles/main.dir/src/tests/test_binary_search.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/tests/test_binary_search.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/haoji/workSpace/dev/algo-practice/src/tests/test_binary_search.c -o CMakeFiles/main.dir/src/tests/test_binary_search.c.s
+
+CMakeFiles/main.dir/src/tests/test_dynarray.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/tests/test_dynarray.c.o: /Users/haoji/workSpace/dev/algo-practice/src/tests/test_dynarray.c
+CMakeFiles/main.dir/src/tests/test_dynarray.c.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/haoji/workSpace/dev/algo-practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/main.dir/src/tests/test_dynarray.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/tests/test_dynarray.c.o -MF CMakeFiles/main.dir/src/tests/test_dynarray.c.o.d -o CMakeFiles/main.dir/src/tests/test_dynarray.c.o -c /Users/haoji/workSpace/dev/algo-practice/src/tests/test_dynarray.c
+
+CMakeFiles/main.dir/src/tests/test_dynarray.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/tests/test_dynarray.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/haoji/workSpace/dev/algo-practice/src/tests/test_dynarray.c > CMakeFiles/main.dir/src/tests/test_dynarray.c.i
+
+CMakeFiles/main.dir/src/tests/test_dynarray.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/tests/test_dynarray.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/haoji/workSpace/dev/algo-practice/src/tests/test_dynarray.c -o CMakeFiles/main.dir/src/tests/test_dynarray.c.s
+
+CMakeFiles/main.dir/src/tests/test_two_sum.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/tests/test_two_sum.c.o: /Users/haoji/workSpace/dev/algo-practice/src/tests/test_two_sum.c
+CMakeFiles/main.dir/src/tests/test_two_sum.c.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/haoji/workSpace/dev/algo-practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/main.dir/src/tests/test_two_sum.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/tests/test_two_sum.c.o -MF CMakeFiles/main.dir/src/tests/test_two_sum.c.o.d -o CMakeFiles/main.dir/src/tests/test_two_sum.c.o -c /Users/haoji/workSpace/dev/algo-practice/src/tests/test_two_sum.c
+
+CMakeFiles/main.dir/src/tests/test_two_sum.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/tests/test_two_sum.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/haoji/workSpace/dev/algo-practice/src/tests/test_two_sum.c > CMakeFiles/main.dir/src/tests/test_two_sum.c.i
+
+CMakeFiles/main.dir/src/tests/test_two_sum.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/tests/test_two_sum.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/haoji/workSpace/dev/algo-practice/src/tests/test_two_sum.c -o CMakeFiles/main.dir/src/tests/test_two_sum.c.s
+
+CMakeFiles/main.dir/src/tree/avl_tree.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/tree/avl_tree.c.o: /Users/haoji/workSpace/dev/algo-practice/src/tree/avl_tree.c
+CMakeFiles/main.dir/src/tree/avl_tree.c.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/haoji/workSpace/dev/algo-practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/main.dir/src/tree/avl_tree.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/tree/avl_tree.c.o -MF CMakeFiles/main.dir/src/tree/avl_tree.c.o.d -o CMakeFiles/main.dir/src/tree/avl_tree.c.o -c /Users/haoji/workSpace/dev/algo-practice/src/tree/avl_tree.c
+
+CMakeFiles/main.dir/src/tree/avl_tree.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/tree/avl_tree.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/haoji/workSpace/dev/algo-practice/src/tree/avl_tree.c > CMakeFiles/main.dir/src/tree/avl_tree.c.i
+
+CMakeFiles/main.dir/src/tree/avl_tree.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/tree/avl_tree.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/haoji/workSpace/dev/algo-practice/src/tree/avl_tree.c -o CMakeFiles/main.dir/src/tree/avl_tree.c.s
+
+CMakeFiles/main.dir/utils/dynarray.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/utils/dynarray.c.o: /Users/haoji/workSpace/dev/algo-practice/utils/dynarray.c
+CMakeFiles/main.dir/utils/dynarray.c.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/haoji/workSpace/dev/algo-practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/main.dir/utils/dynarray.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/utils/dynarray.c.o -MF CMakeFiles/main.dir/utils/dynarray.c.o.d -o CMakeFiles/main.dir/utils/dynarray.c.o -c /Users/haoji/workSpace/dev/algo-practice/utils/dynarray.c
+
+CMakeFiles/main.dir/utils/dynarray.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/utils/dynarray.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/haoji/workSpace/dev/algo-practice/utils/dynarray.c > CMakeFiles/main.dir/utils/dynarray.c.i
+
+CMakeFiles/main.dir/utils/dynarray.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/utils/dynarray.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/haoji/workSpace/dev/algo-practice/utils/dynarray.c -o CMakeFiles/main.dir/utils/dynarray.c.s
 
 # Object files for target main
 main_OBJECTS = \
-"CMakeFiles/main.dir/src/array/two_sum.cpp.o" \
-"CMakeFiles/main.dir/src/main.cpp.o" \
-"CMakeFiles/main.dir/src/tests/test_binary_search.cpp.o" \
-"CMakeFiles/main.dir/src/tests/test_two_sum.cpp.o"
+"CMakeFiles/main.dir/src/array/two_sum.c.o" \
+"CMakeFiles/main.dir/src/main.c.o" \
+"CMakeFiles/main.dir/src/past_questions/utokyo_cs_2022.c.o" \
+"CMakeFiles/main.dir/src/sort/basic_sort.c.o" \
+"CMakeFiles/main.dir/src/tests/test_basic_sort.c.o" \
+"CMakeFiles/main.dir/src/tests/test_binary_search.c.o" \
+"CMakeFiles/main.dir/src/tests/test_dynarray.c.o" \
+"CMakeFiles/main.dir/src/tests/test_two_sum.c.o" \
+"CMakeFiles/main.dir/src/tree/avl_tree.c.o" \
+"CMakeFiles/main.dir/utils/dynarray.c.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
-main: CMakeFiles/main.dir/src/array/two_sum.cpp.o
-main: CMakeFiles/main.dir/src/main.cpp.o
-main: CMakeFiles/main.dir/src/tests/test_binary_search.cpp.o
-main: CMakeFiles/main.dir/src/tests/test_two_sum.cpp.o
+main: CMakeFiles/main.dir/src/array/two_sum.c.o
+main: CMakeFiles/main.dir/src/main.c.o
+main: CMakeFiles/main.dir/src/past_questions/utokyo_cs_2022.c.o
+main: CMakeFiles/main.dir/src/sort/basic_sort.c.o
+main: CMakeFiles/main.dir/src/tests/test_basic_sort.c.o
+main: CMakeFiles/main.dir/src/tests/test_binary_search.c.o
+main: CMakeFiles/main.dir/src/tests/test_dynarray.c.o
+main: CMakeFiles/main.dir/src/tests/test_two_sum.c.o
+main: CMakeFiles/main.dir/src/tree/avl_tree.c.o
+main: CMakeFiles/main.dir/utils/dynarray.c.o
 main: CMakeFiles/main.dir/build.make
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/haoji/workSpace/dev/algoPractice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/haoji/workSpace/dev/algo-practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -156,6 +252,6 @@ CMakeFiles/main.dir/clean:
 .PHONY : CMakeFiles/main.dir/clean
 
 CMakeFiles/main.dir/depend:
-	cd /Users/haoji/workSpace/dev/algoPractice/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/haoji/workSpace/dev/algoPractice /Users/haoji/workSpace/dev/algoPractice /Users/haoji/workSpace/dev/algoPractice/build /Users/haoji/workSpace/dev/algoPractice/build /Users/haoji/workSpace/dev/algoPractice/build/CMakeFiles/main.dir/DependInfo.cmake "--color=$(COLOR)" main
+	cd /Users/haoji/workSpace/dev/algo-practice/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/haoji/workSpace/dev/algo-practice /Users/haoji/workSpace/dev/algo-practice /Users/haoji/workSpace/dev/algo-practice/build /Users/haoji/workSpace/dev/algo-practice/build /Users/haoji/workSpace/dev/algo-practice/build/CMakeFiles/main.dir/DependInfo.cmake "--color=$(COLOR)" main
 .PHONY : CMakeFiles/main.dir/depend
 

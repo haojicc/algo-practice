@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/Users/haoji/workSpace/dev/algoPractice/build/cmake_install.cmake"
+		"/Users/haoji/workSpace/dev/algo-practice/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

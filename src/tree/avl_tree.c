@@ -1,6 +1,5 @@
 #include "avl_tree.h"
 
-// ===== 内部函数（不对外暴露） =====
 static int max(int a, int b) {
     return (a > b) ? a : b;
 }
