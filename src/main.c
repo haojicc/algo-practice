@@ -13,34 +13,44 @@
 /**
  * @brief Test function for two sum algorithm
  */
-void test_two_sum();
+void test_two_sum(void);
 
 /**
  * @brief Test function for basic sorting algorithms
  */
-void test_basic_sort();
+void test_basic_sort(void);
 
 /**
  * @brief Test function for binary search algorithm
  */
-void test_binary_search();
+void test_binary_search(void);
 
 /**
  * @brief Test function for dynamic array implementation
  */
-void test_dynarray();
+void test_dynarray(void);
+
+/**
+ * @brief Test function for stack implementation
+ */
+void test_stack(void);
+void test_queue(void);
+void test_linked_list(void);
 
 /**
  * @brief Main entry point
  * @return 0 on success
  */
-int main() {
+int main(void) {
     printf("=== C Algorithm Test ===\n");
 
     test_two_sum();
     test_basic_sort();
     test_binary_search();
     test_dynarray();
+    test_stack();
+    test_queue();
+    test_linked_list();
     
     return 0;
 }

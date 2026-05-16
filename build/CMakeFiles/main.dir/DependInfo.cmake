@@ -15,9 +15,14 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/haoji/workSpace/dev/algo-practice/src/tests/test_basic_sort.c" "CMakeFiles/main.dir/src/tests/test_basic_sort.c.o" "gcc" "CMakeFiles/main.dir/src/tests/test_basic_sort.c.o.d"
   "/Users/haoji/workSpace/dev/algo-practice/src/tests/test_binary_search.c" "CMakeFiles/main.dir/src/tests/test_binary_search.c.o" "gcc" "CMakeFiles/main.dir/src/tests/test_binary_search.c.o.d"
   "/Users/haoji/workSpace/dev/algo-practice/src/tests/test_dynarray.c" "CMakeFiles/main.dir/src/tests/test_dynarray.c.o" "gcc" "CMakeFiles/main.dir/src/tests/test_dynarray.c.o.d"
+  "/Users/haoji/workSpace/dev/algo-practice/src/tests/test_queue.c" "CMakeFiles/main.dir/src/tests/test_queue.c.o" "gcc" "CMakeFiles/main.dir/src/tests/test_queue.c.o.d"
+  "/Users/haoji/workSpace/dev/algo-practice/src/tests/test_stack.c" "CMakeFiles/main.dir/src/tests/test_stack.c.o" "gcc" "CMakeFiles/main.dir/src/tests/test_stack.c.o.d"
   "/Users/haoji/workSpace/dev/algo-practice/src/tests/test_two_sum.c" "CMakeFiles/main.dir/src/tests/test_two_sum.c.o" "gcc" "CMakeFiles/main.dir/src/tests/test_two_sum.c.o.d"
   "/Users/haoji/workSpace/dev/algo-practice/src/tree/avl_tree.c" "CMakeFiles/main.dir/src/tree/avl_tree.c.o" "gcc" "CMakeFiles/main.dir/src/tree/avl_tree.c.o.d"
   "/Users/haoji/workSpace/dev/algo-practice/utils/dynarray.c" "CMakeFiles/main.dir/utils/dynarray.c.o" "gcc" "CMakeFiles/main.dir/utils/dynarray.c.o.d"
+  "/Users/haoji/workSpace/dev/algo-practice/utils/queue_array.c" "CMakeFiles/main.dir/utils/queue_array.c.o" "gcc" "CMakeFiles/main.dir/utils/queue_array.c.o.d"
+  "/Users/haoji/workSpace/dev/algo-practice/utils/queue_list.c" "CMakeFiles/main.dir/utils/queue_list.c.o" "gcc" "CMakeFiles/main.dir/utils/queue_list.c.o.d"
+  "/Users/haoji/workSpace/dev/algo-practice/utils/stack.c" "CMakeFiles/main.dir/utils/stack.c.o" "gcc" "CMakeFiles/main.dir/utils/stack.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

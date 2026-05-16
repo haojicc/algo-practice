@@ -297,6 +297,54 @@ src/tests/test_dynarray.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tests/test_dynarray.c.s
 .PHONY : src/tests/test_dynarray.c.s
 
+src/tests/test_queue.o: src/tests/test_queue.c.o
+.PHONY : src/tests/test_queue.o
+
+# target to build an object file
+src/tests/test_queue.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tests/test_queue.c.o
+.PHONY : src/tests/test_queue.c.o
+
+src/tests/test_queue.i: src/tests/test_queue.c.i
+.PHONY : src/tests/test_queue.i
+
+# target to preprocess a source file
+src/tests/test_queue.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tests/test_queue.c.i
+.PHONY : src/tests/test_queue.c.i
+
+src/tests/test_queue.s: src/tests/test_queue.c.s
+.PHONY : src/tests/test_queue.s
+
+# target to generate assembly for a file
+src/tests/test_queue.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tests/test_queue.c.s
+.PHONY : src/tests/test_queue.c.s
+
+src/tests/test_stack.o: src/tests/test_stack.c.o
+.PHONY : src/tests/test_stack.o
+
+# target to build an object file
+src/tests/test_stack.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tests/test_stack.c.o
+.PHONY : src/tests/test_stack.c.o
+
+src/tests/test_stack.i: src/tests/test_stack.c.i
+.PHONY : src/tests/test_stack.i
+
+# target to preprocess a source file
+src/tests/test_stack.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tests/test_stack.c.i
+.PHONY : src/tests/test_stack.c.i
+
+src/tests/test_stack.s: src/tests/test_stack.c.s
+.PHONY : src/tests/test_stack.s
+
+# target to generate assembly for a file
+src/tests/test_stack.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tests/test_stack.c.s
+.PHONY : src/tests/test_stack.c.s
+
 src/tests/test_two_sum.o: src/tests/test_two_sum.c.o
 .PHONY : src/tests/test_two_sum.o
 
@@ -369,6 +417,78 @@ utils/dynarray.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/utils/dynarray.c.s
 .PHONY : utils/dynarray.c.s
 
+utils/queue_array.o: utils/queue_array.c.o
+.PHONY : utils/queue_array.o
+
+# target to build an object file
+utils/queue_array.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/utils/queue_array.c.o
+.PHONY : utils/queue_array.c.o
+
+utils/queue_array.i: utils/queue_array.c.i
+.PHONY : utils/queue_array.i
+
+# target to preprocess a source file
+utils/queue_array.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/utils/queue_array.c.i
+.PHONY : utils/queue_array.c.i
+
+utils/queue_array.s: utils/queue_array.c.s
+.PHONY : utils/queue_array.s
+
+# target to generate assembly for a file
+utils/queue_array.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/utils/queue_array.c.s
+.PHONY : utils/queue_array.c.s
+
+utils/queue_list.o: utils/queue_list.c.o
+.PHONY : utils/queue_list.o
+
+# target to build an object file
+utils/queue_list.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/utils/queue_list.c.o
+.PHONY : utils/queue_list.c.o
+
+utils/queue_list.i: utils/queue_list.c.i
+.PHONY : utils/queue_list.i
+
+# target to preprocess a source file
+utils/queue_list.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/utils/queue_list.c.i
+.PHONY : utils/queue_list.c.i
+
+utils/queue_list.s: utils/queue_list.c.s
+.PHONY : utils/queue_list.s
+
+# target to generate assembly for a file
+utils/queue_list.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/utils/queue_list.c.s
+.PHONY : utils/queue_list.c.s
+
+utils/stack.o: utils/stack.c.o
+.PHONY : utils/stack.o
+
+# target to build an object file
+utils/stack.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/utils/stack.c.o
+.PHONY : utils/stack.c.o
+
+utils/stack.i: utils/stack.c.i
+.PHONY : utils/stack.i
+
+# target to preprocess a source file
+utils/stack.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/utils/stack.c.i
+.PHONY : utils/stack.c.i
+
+utils/stack.s: utils/stack.c.s
+.PHONY : utils/stack.s
+
+# target to generate assembly for a file
+utils/stack.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/utils/stack.c.s
+.PHONY : utils/stack.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -399,6 +519,12 @@ help:
 	@echo "... src/tests/test_dynarray.o"
 	@echo "... src/tests/test_dynarray.i"
 	@echo "... src/tests/test_dynarray.s"
+	@echo "... src/tests/test_queue.o"
+	@echo "... src/tests/test_queue.i"
+	@echo "... src/tests/test_queue.s"
+	@echo "... src/tests/test_stack.o"
+	@echo "... src/tests/test_stack.i"
+	@echo "... src/tests/test_stack.s"
 	@echo "... src/tests/test_two_sum.o"
 	@echo "... src/tests/test_two_sum.i"
 	@echo "... src/tests/test_two_sum.s"
@@ -408,6 +534,15 @@ help:
 	@echo "... utils/dynarray.o"
 	@echo "... utils/dynarray.i"
 	@echo "... utils/dynarray.s"
+	@echo "... utils/queue_array.o"
+	@echo "... utils/queue_array.i"
+	@echo "... utils/queue_array.s"
+	@echo "... utils/queue_list.o"
+	@echo "... utils/queue_list.i"
+	@echo "... utils/queue_list.s"
+	@echo "... utils/stack.o"
+	@echo "... utils/stack.i"
+	@echo "... utils/stack.s"
 .PHONY : help
 
 

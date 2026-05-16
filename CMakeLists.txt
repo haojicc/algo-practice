@@ -16,7 +16,7 @@ include_directories(${PROJECT_SOURCE_DIR}/src)
 # Collect all source files recursively
 file(GLOB_RECURSE SOURCES
     src/*.c
-    tests/*.c
+    src/tests/*.c
     utils/*.c
 )
 

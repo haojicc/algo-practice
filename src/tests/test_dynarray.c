@@ -17,7 +17,7 @@
  *
  * Tests all major operations: creation, push_back, get, set, resize, pop_back, clear, destroy.
  */
-void test_dynarray() {
+void test_dynarray(void) {
     printf("Testing DynArray with type-safe macros\n");
 
     // Test create with type macro
@@ -28,10 +28,10 @@ void test_dynarray() {
     }
     printf("Created array, size: %zu, capacity: %zu\n", dynarray_size(arr), dynarray_capacity(arr));
 
-    // Test push_back with type macro
+    // Test push_back with type-specific macro
     int values[] = {10, 20, 30, 40, 50};
     for (int i = 0; i < 5; ++i) {
-        DYNARRAY_PUSH_BACK(arr, values[i]);
+        DYNARRAY_PUSH_BACK_INT(arr, values[i]);
     }
     printf("After push_back 5 elements, size: %zu, capacity: %zu\n", dynarray_size(arr), dynarray_capacity(arr));
 

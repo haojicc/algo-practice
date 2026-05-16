@@ -25,6 +25,8 @@ extern "C" {
 #define DYNARRAY_TYPE_INT 1
 #define DYNARRAY_TYPE_DOUBLE 2
 #define DYNARRAY_TYPE_CHAR 3
+#define DYNARRAY_TYPE_FLOAT 4
+#define DYNARRAY_TYPE_LONG 5
 // Can be extended for more types
 
 /**
@@ -172,16 +174,64 @@ int dynarray_get_type(const DynArray *arr);
 // Type-safe creation and operation macros
 #define DYNARRAY_CREATE(type) dynarray_create_typed(sizeof(type), _DYNARRAY_TYPE_ID(type))
 #define DYNARRAY_CREATE_WITH_CAPACITY(type, capacity) dynarray_create_with_capacity_typed(sizeof(type), capacity, _DYNARRAY_TYPE_ID(type))
-#define DYNARRAY_PUSH_BACK(arr, value) do { \
-    typeof(value) temp = (value); \
+#define DYNARRAY_PUSH_BACK_INT(arr, value) do { \
+    int temp = (value); \
     dynarray_push_back(arr, &temp); \
 } while(0)
-#define DYNARRAY_SET(arr, index, value) do { \
-    typeof(value) temp = (value); \
+#define DYNARRAY_PUSH_BACK_DOUBLE(arr, value) do { \
+    double temp = (value); \
+    dynarray_push_back(arr, &temp); \
+} while(0)
+#define DYNARRAY_PUSH_BACK_CHAR(arr, value) do { \
+    char temp = (value); \
+    dynarray_push_back(arr, &temp); \
+} while(0)
+#define DYNARRAY_PUSH_BACK_FLOAT(arr, value) do { \
+    float temp = (value); \
+    dynarray_push_back(arr, &temp); \
+} while(0)
+#define DYNARRAY_PUSH_BACK_LONG(arr, value) do { \
+    long temp = (value); \
+    dynarray_push_back(arr, &temp); \
+} while(0)
+#define DYNARRAY_SET_INT(arr, index, value) do { \
+    int temp = (value); \
     dynarray_set(arr, index, &temp); \
 } while(0)
-#define DYNARRAY_RESIZE(arr, new_size, default_val) do { \
-    typeof(default_val) temp = (default_val); \
+#define DYNARRAY_SET_DOUBLE(arr, index, value) do { \
+    double temp = (value); \
+    dynarray_set(arr, index, &temp); \
+} while(0)
+#define DYNARRAY_SET_CHAR(arr, index, value) do { \
+    char temp = (value); \
+    dynarray_set(arr, index, &temp); \
+} while(0)
+#define DYNARRAY_SET_FLOAT(arr, index, value) do { \
+    float temp = (value); \
+    dynarray_set(arr, index, &temp); \
+} while(0)
+#define DYNARRAY_SET_LONG(arr, index, value) do { \
+    long temp = (value); \
+    dynarray_set(arr, index, &temp); \
+} while(0)
+#define DYNARRAY_RESIZE_INT(arr, new_size, default_val) do { \
+    int temp = (default_val); \
+    dynarray_resize(arr, new_size, &temp); \
+} while(0)
+#define DYNARRAY_RESIZE_DOUBLE(arr, new_size, default_val) do { \
+    double temp = (default_val); \
+    dynarray_resize(arr, new_size, &temp); \
+} while(0)
+#define DYNARRAY_RESIZE_CHAR(arr, new_size, default_val) do { \
+    char temp = (default_val); \
+    dynarray_resize(arr, new_size, &temp); \
+} while(0)
+#define DYNARRAY_RESIZE_FLOAT(arr, new_size, default_val) do { \
+    float temp = (default_val); \
+    dynarray_resize(arr, new_size, &temp); \
+} while(0)
+#define DYNARRAY_RESIZE_LONG(arr, new_size, default_val) do { \
+    long temp = (default_val); \
     dynarray_resize(arr, new_size, &temp); \
 } while(0)
 
@@ -190,6 +240,8 @@ int dynarray_get_type(const DynArray *arr);
     int: DYNARRAY_TYPE_INT, \
     double: DYNARRAY_TYPE_DOUBLE, \
     char: DYNARRAY_TYPE_CHAR, \
+    float: DYNARRAY_TYPE_FLOAT, \
+    long: DYNARRAY_TYPE_LONG, \
     default: DYNARRAY_TYPE_UNKNOWN \
 )
 
