@@ -1,4 +1,4 @@
-# C++ Algorithms Practice
+# C Algorithms Practice
 
 ## 📌 Overview / 概要
 
