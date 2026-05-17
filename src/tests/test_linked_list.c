@@ -8,7 +8,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "../../utils/linked_list.h"
+#include "../utils/linked_list.h"
 
 static int compare_int(const void* a, const void* b) {
     int lhs = *(const int*)a;

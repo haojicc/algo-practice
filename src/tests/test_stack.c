@@ -10,7 +10,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "../../utils/stack.h"
+#include "../utils/stack.h"
 
 /**
  * @brief Test function for stack functionality

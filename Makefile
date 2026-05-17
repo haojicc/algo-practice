@@ -9,17 +9,27 @@ ifeq ($(BUILD),debug)
 else
 	CFLAGS += -O2 -DNDEBUG
 endif
+TEST_CFLAGS = $(CFLAGS) -UNDEBUG
 LDFLAGS =
 
-SOURCES = $(shell find src utils -name '*.c')
+MAIN_SOURCES = $(shell find src -name '*.c' | grep -vE 'src/tests/test_zset.c|src/tests/benchmark.c')
+UTIL_SOURCES = $(shell find src/utils -name '*.c')
 TARGET = main
+TEST_TARGET = test_zset
+BENCHMARK_TARGET = benchmark-bin
 
-.PHONY: all clean run debug release test valgrind
+.PHONY: all clean run debug release test valgrind benchmark
 
-all: $(TARGET)
+all: $(TARGET) $(TEST_TARGET)
 
-$(TARGET): $(SOURCES)
-	$(CC) $(CFLAGS) $(SOURCES) -o $(TARGET) $(LDFLAGS)
+$(TARGET): $(MAIN_SOURCES)
+	$(CC) $(CFLAGS) $(MAIN_SOURCES) -o $(TARGET) $(LDFLAGS)
+
+$(TEST_TARGET): src/tests/test_zset.c $(UTIL_SOURCES)
+	$(CC) $(TEST_CFLAGS) src/tests/test_zset.c $(UTIL_SOURCES) -o $(TEST_TARGET) $(LDFLAGS)
+
+$(BENCHMARK_TARGET): src/tests/benchmark.c $(UTIL_SOURCES)
+	$(CC) $(TEST_CFLAGS) src/tests/benchmark.c $(UTIL_SOURCES) -o $(BENCHMARK_TARGET) $(LDFLAGS)
 
 run: $(TARGET)
 	./$(TARGET)
@@ -30,11 +40,14 @@ debug:
 release:
 	$(MAKE) BUILD=release all
 
-test: $(TARGET)
-	./$(TARGET)
+test: $(TEST_TARGET)
+	./$(TEST_TARGET)
 
-valgrind: $(TARGET)
-	valgrind --leak-check=full --show-leak-kinds=all ./$(TARGET)
+valgrind: $(TEST_TARGET)
+	valgrind --leak-check=full --show-leak-kinds=all ./$(TEST_TARGET)
+
+benchmark: $(BENCHMARK_TARGET)
+	./$(BENCHMARK_TARGET)
 
 clean:
-	rm -f $(TARGET)
+	rm -f $(TARGET) $(TEST_TARGET) $(BENCHMARK_TARGET)

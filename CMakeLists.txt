@@ -12,13 +12,16 @@ set(CMAKE_C_STANDARD_REQUIRED True)
 
 # Include header file paths
 include_directories(${PROJECT_SOURCE_DIR}/src)
+include_directories(${PROJECT_SOURCE_DIR}/src/utils)
 
 # Collect all source files recursively
 file(GLOB_RECURSE SOURCES
     src/*.c
     src/tests/*.c
-    utils/*.c
+    src/utils/*.c
 )
+list(FILTER SOURCES EXCLUDE REGEX ".*src/tests/test_zset.c$")
+list(FILTER SOURCES EXCLUDE REGEX ".*src/tests/benchmark.c$")
 
 # Create the main executable
 add_executable(main ${SOURCES})

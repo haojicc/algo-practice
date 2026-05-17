@@ -10,7 +10,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "../../utils/dynarray.h"
+#include "../utils/dynarray.h"
 
 /**
  * @brief Test function for dynamic array functionality

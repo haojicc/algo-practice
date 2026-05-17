@@ -9,8 +9,8 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "../../utils/queue_array.h"
-#include "../../utils/queue_list.h"
+#include "../utils/queue_array.h"
+#include "../utils/queue_list.h"
 
 static void print_array_queue_example(void)
 {
