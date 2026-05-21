@@ -1,0 +1,6 @@
+# Ignore generated build artifacts
+main
+test_zset
+benchmark-bin
+build/
+test_zset.dSYM/
