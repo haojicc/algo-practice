@@ -11,6 +11,8 @@
 !src/
 !src/**/*.c
 !src/**/*.h
+!src/tree/*.c
+!src/tree/*.h
 
 # 保留文档
 !docs/
@@ -26,3 +28,4 @@ test_zset
 benchmark-bin
 build/
 test_zset.dSYM/
+.DS_Store
