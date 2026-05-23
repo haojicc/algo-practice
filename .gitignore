@@ -9,7 +9,7 @@
 
 # 保留源代码目录及其中的 C/C++ 源文件和头文件
 !src/
-!src/tree
+!src/**
 !src/**/*.c
 !src/**/*.h
 
@@ -28,3 +28,4 @@ benchmark-bin
 build/
 test_zset.dSYM/
 .DS_Store
+.vscode/
