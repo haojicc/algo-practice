@@ -1,0 +1,117 @@
+本次生成コードの詳細説明（日本語）
+1. iterator.c
+tree_iterator_collect_nodes
+
+木を指定された走査モードで訪問し、ノードポインタを配列に収集します。
+TREE_ITERATOR_PREORDER, TREE_ITERATOR_POSTORDER, TREE_ITERATOR_INORDER, TREE_ITERATOR_LEVEL_ORDER の4種類をサポート。
+レベル順ではキューによる幅優先探索を行い、それ以外はスタックによる非再帰探索を実装。
+tree_iterator_fill
+
+tree_iterator_t 構造体に対してノード配列を生成し、count と position を初期化します。
+tree_iterator_init
+
+イテレータを初期化し、tree_iterator_fill により走査順序を準備。
+tree_iterator_next / tree_iterator_prev
+
+次の要素、前の要素を返す。返却値は payload へのポインタ。
+tree_iterator_has_next / tree_iterator_has_prev
+
+前後の要素が存在するかどうかの判定。
+tree_iterator_destroy
+
+動的に確保したノード配列を解放し、イテレータ状態をリセット。
+2. allocator.h / allocator.c
+tree_allocator_t
+
+一貫したメモリ管理のための抽象化。
+malloc_fn, free_fn に加え ctx、owns_ctx、配分情報、リークフックを保持。
+tree_allocator_default_init
+
+標準の malloc / free をラップして tree_allocator_t を初期化。
+tree_allocator_pool_init
+
+プールアロケータを初期化。固定サイズブロックを確保して高速割当てを実現。
+tree_allocator_destroy
+
+owns_ctx が true の場合にのみコンテキストおよびブロックを解放。
+今回の修正では、デフォルトアロケータのコンテキストを誤って解放しないように保護を追加。
+3. tree_base.h / tree_base.c
+tree_base.h
+
+基本的な木構造と型定義。
+tree_type_t：TREE_TYPE_BINARY, TREE_TYPE_BST, TREE_TYPE_AVL, TREE_TYPE_RB
+tree_config_t：比較、コピー、破棄、出力、シリアライズ/デシリアライズのコールバック。
+tree_node_t：左・右・親・高さ・色・ペイロードを含む汎用ノード。
+TREE_DECLARE マクロ
+
+型安全なラッパー型を生成し、tree_init, tree_insert, tree_search などを特定要素型にインラインで対応させる。
+element_type の sizeof を利用してサイズを設定。
+tree_init
+
+共通初期化処理。内部で tree_allocators_prepare を呼び、必要なら RB 木用の nil ノードを作成。
+tree_allocators_prepare
+
+デフォルトコピーメソッドをセットし、tree_allocator_t を内部ラップ用に設定。
+tree_destroy
+
+再帰的にノードを解放し、必要ならアロケータも解放。
+tree_traverse_*
+
+tree_iterator_t を利用した汎用走査。
+tree_traverse_with_mode で共通化し、コールバック関数 visit を呼び出す。
+汎用ラッパー
+
+tree_insert, tree_remove, tree_search, tree_contains
+tree->type に応じて BST / AVL / RB の実装を呼び出す。
+4. binary_tree.h / binary_tree.c
+bt_init
+
+tree_init を呼び出して二分木型を初期化。
+bt_insert_left / bt_insert_right
+
+親ノードの左/右に挿入。parent == NULL なら根ノードとして挿入。
+同じ位置に既存ノードがある場合は TREE_ERR_DUPLICATE を返す。
+bt_remove, bt_remove_subtree
+
+単一ノードまたは部分木を再帰的に解放。
+tree_node_count による再計算を適切に行うように修正。
+以前の const 修飾での代入エラーを修正し、APIシグネチャを一致させた。
+bt_height, bt_depth, bt_node_count, bt_leaf_count
+
+木の高さ、深さ、ノード数、葉ノード数を計算。
+5. avl_tree.h / avl_tree.c
+avl_init, avl_insert, avl_remove
+
+AVL木固有の構造を提示。tree_type_t に基づき tree_init で初期化。
+avl_search
+
+直接 avl_find_node を検索し、見つかれば payload を返すように修正。
+以前の bst_search 参照は不適切で、型と戻り値の不一致を引き起こしていた。
+avl_validate
+
+中間順走査による整合性チェックを実装し、BST条件を検証。
+バランス判定や高さ整合性は別途必要だが、今回の修正では探索順序チェックを担保。
+6. ビルド関連
+Makefile
+
+-Isrc -Isrc/tree を追加してヘッダ検索パスを整備。
+tree 直下のヘッダファイルを正しく参照できるようにした。
+CMakeLists.txt
+
+tree を include_directories に追加。
+既存の src／utils に加えて tree モジュールを含めた。
+7. 実行確認
+make -j2 でビルド成功。
+main 実行結果で以下が正常に完了。
+Binary Tree
+BST
+AVL Tree
+Red-Black Tree
+以前発生した free() の不正解放エラーは、tree_allocator_destroy の owns_ctx 保護で解消。
+8. 重要な修正ポイント
+tree_allocator_default_init の malloc/free 関数ポインタ不一致を解消。
+binary_tree の const 関連エラーと API 宣言不整合を修正。
+TREE_DECLARE マクロの型パラメータ名を明確化し、C 構文エラーを回避。
+avl_search の実装不一致を修正。
+Makefile/CMakeLists.txt でビルド対象ヘッダパスを統一。
+以上が、本セッションで生成・修正した主要コードの日本語による詳細注釈です。

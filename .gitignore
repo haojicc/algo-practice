@@ -1,4 +1,26 @@
-# Ignore generated build artifacts
+# 默认忽略所有文件，使用白名单方式指定需要同步的文件和目录
+*
+
+# 保留 Git 配置文件
+!.gitignore
+
+# 保留项目根目录说明
+!README.md
+
+# 保留源代码目录及其中的 C/C++ 源文件和头文件
+!src/
+!src/**/*.c
+!src/**/*.h
+
+# 保留文档
+!docs/
+!docs/**
+
+# 保留构建脚本和配置文件
+!CMakeLists.txt
+!Makefile
+
+# 忽略生成的二进制与构建产物
 main
 test_zset
 benchmark-bin

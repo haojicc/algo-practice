@@ -36,6 +36,7 @@ void test_dynarray(void);
 void test_stack(void);
 void test_queue(void);
 void test_linked_list(void);
+void test_tree(void);
 
 /**
  * @brief Main entry point
@@ -51,6 +52,7 @@ int main(void) {
     test_stack();
     test_queue();
     test_linked_list();
+    test_tree();
     
     return 0;
 }

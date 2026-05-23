@@ -3,7 +3,7 @@
 
 CC = cc
 BUILD ?= release
-CFLAGS = -std=c11 -Wall -Wextra -Wpedantic
+CFLAGS = -std=c11 -Wall -Wextra -Wpedantic -Isrc -Isrc/tree
 ifeq ($(BUILD),debug)
 	CFLAGS += -g -O0 -DDEBUG
 else
@@ -12,7 +12,7 @@ endif
 TEST_CFLAGS = $(CFLAGS) -UNDEBUG
 LDFLAGS =
 
-MAIN_SOURCES = $(shell find src -name '*.c' | grep -vE 'src/tests/test_zset.c|src/tests/benchmark.c')
+MAIN_SOURCES = $(shell find src -name '*.c' | grep -vE 'src/tests/test_zset.c|src/tests/benchmark.c|src/tests/benchmark_tree.c')
 UTIL_SOURCES = $(shell find src/utils -name '*.c')
 TARGET = main
 TEST_TARGET = test_zset
@@ -28,8 +28,8 @@ $(TARGET): $(MAIN_SOURCES)
 $(TEST_TARGET): src/tests/test_zset.c $(UTIL_SOURCES)
 	$(CC) $(TEST_CFLAGS) src/tests/test_zset.c $(UTIL_SOURCES) -o $(TEST_TARGET) $(LDFLAGS)
 
-$(BENCHMARK_TARGET): src/tests/benchmark.c $(UTIL_SOURCES)
-	$(CC) $(TEST_CFLAGS) src/tests/benchmark.c $(UTIL_SOURCES) -o $(BENCHMARK_TARGET) $(LDFLAGS)
+$(BENCHMARK_TARGET): src/tests/benchmark_tree.c $(UTIL_SOURCES)
+	$(CC) $(TEST_CFLAGS) src/tests/benchmark_tree.c $(UTIL_SOURCES) -o $(BENCHMARK_TARGET) $(LDFLAGS)
 
 run: $(TARGET)
 	./$(TARGET)

@@ -1,26 +1,20 @@
 #ifndef AVL_TREE_H
 #define AVL_TREE_H
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "tree_base.h"
 
-// AVL树节点
-typedef struct Node {
-    int key;
-    struct Node *left;
-    struct Node *right;
-    int height;
-} Node;
-
-// ===== 对外暴露的接口 =====
-
-// 插入
-Node* avl_insert(Node* root, int key);
-
-// 删除
-Node* avl_delete(Node* root, int key);
-
-// 前序遍历
-void avl_preorder(Node* root);
-
+#ifdef __cplusplus
+extern "C" {
 #endif
+
+tree_status_t avl_init(tree_t* tree, const tree_config_t* config, size_t element_size);
+tree_status_t avl_insert(tree_t* tree, const void* value);
+tree_status_t avl_remove(tree_t* tree, const void* key);
+const void* avl_search(const tree_t* tree, const void* key);
+tree_status_t avl_validate(const tree_t* tree);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* AVL_TREE_H */
